@@ -4,4 +4,4 @@ scikit-image
 matplotlib
 pandas
 tensorflow-cpu==2.5.0
-opencv-headless
+opencv-python-headless
