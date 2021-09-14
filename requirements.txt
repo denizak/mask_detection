@@ -3,5 +3,5 @@ numpy
 scikit-image
 matplotlib
 pandas
-tensorflow-cpu
+tensorflow-cpu==2.5.0
 opencv-python
