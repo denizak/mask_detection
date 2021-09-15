@@ -15,7 +15,7 @@ import cv2
 import sys
 from scipy.spatial import distance
 
-app = flask.Flask(__name__, template_folder='templates')
+app = flask.Flask(__name__, static_folder='static', template_folder='templates')
 
 def testing(name):
     model = load_model("classify_model.h5")
