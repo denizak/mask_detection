@@ -9,4 +9,9 @@ WORKDIR /app
 COPY . /app/
 
 RUN pip install -r requirements.txt
-CMD python app.py 
+
+#Expose the required port
+EXPOSE 5000
+
+#Run the command
+CMD gunicorn main:app
