@@ -15,9 +15,9 @@ import sys
 from scipy.spatial import distance
 
 app = flask.Flask(__name__, template_folder='templates')
-model = load_model("classify_model.h5")
 
 def testing(name):
+    model = load_model("classify_model.h5")
     face_model = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
             
     mask_label = {0:'Pakai Masker',1:'Tanpa Masker'}
