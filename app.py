@@ -1,3 +1,4 @@
+import os
 import flask
 from flask.helpers import send_file
 from flask.wrappers import Response
@@ -75,4 +76,5 @@ def main():
     return(flask.render_template('main.html'))
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
